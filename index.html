@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Library</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: #f4f6f2;
+            color: #333;
+        }
+
+        header {
+            background: #315b45;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        nav {
+            background: #527b60;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+        }
+
+        .welcome {
+            text-align: center;
+            padding: 40px;
+            background: #dce9dc;
+        }
+
+        .container {
+            padding: 25px;
+            text-align: center;
+        }
+
+        .books {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            width: 220px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 3px 8px #ccc;
+        }
+
+        .card h3 {
+            color: #315b45;
+        }
+
+        button {
+            background: #527b60;
+            color: white;
+            border: none;
+            padding: 10px 18px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .about, .contact {
+            text-align: center;
+            padding: 30px;
+            background: #e5eee5;
+            margin-top: 20px;
+        }
+
+        footer {
+            background: #315b45;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Knowledge Library</h1>
+    <p>Read More, Learn More!</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#books">Books</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="welcome" id="home">
+    <h2>Welcome to Our Library</h2>
+    <p>Discover books and explore the world of knowledge.</p>
+    <button onclick="location.href='#books'">Explore Books</button>
+</div>
+
+<div class="container" id="books">
+    <h2>Available Books</h2>
+
+    <div class="books">
+
+        <div class="card">
+            <h3>Python Programming</h3>
+            <p>Author: Mark Lutz</p>
+            <p>Category: Programming</p>
+            <button onclick="alert('Python Programming selected!')">View Book</button>
+        </div>
+
+        <div class="card">
+            <h3>Java Basics</h3>
+            <p>Author: Herbert Schildt</p>
+            <p>Category: Programming</p>
+            <button onclick="alert('Java Basics selected!')">View Book</button>
+        </div>
+
+        <div class="card">
+            <h3>Web Development</h3>
+            <p>Author: Jon Duckett</p>
+            <p>Category: Technology</p>
+            <button onclick="alert('Web Development selected!')">View Book</button>
+        </div>
+
+        <div class="card">
+            <h3>Wings of Fire</h3>
+            <p>Author: A.P.J. Abdul Kalam</p>
+            <p>Category: Biography</p>
+            <button onclick="alert('Wings of Fire selected!')">View Book</button>
+        </div>
+
+        <div class="card">
+            <h3>Rich Dad Poor Dad</h3>
+            <p>Author: Robert Kiyosaki</p>
+            <p>Category: Finance</p>
+            <button onclick="alert('Rich Dad Poor Dad selected!')">View Book</button>
+        </div>
+
+        <div class="card">
+            <h3>Atomic Habits</h3>
+            <p>Author: James Clear</p>
+            <p>Category: Self Help</p>
+            <button onclick="alert('Atomic Habits selected!')">View Book</button>
+        </div>
+
+    </div>
+</div>
+
+<div class="about" id="about">
+    <h2>About Our Library</h2>
+    <p>Our library provides books for students and readers.</p>
+    <p>Learn new things and improve your knowledge every day.</p>
+</div>
+
+<div class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: knowledgelibrary@gmail.com</p>
+    <p>Location: India</p>
+</div>
+
+<footer>
+    <p>© 2026 Knowledge Library. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
